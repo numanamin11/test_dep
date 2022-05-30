@@ -1,8 +1,11 @@
-pipeline{
+pipeline {
     agent any
-    stage('verify branch'){
-        steps{
-            echo $GIT_BRANCH
+
+    stages {
+        stage('verify branch') {
+            steps {
+                echo $GIT_BRANCH
+            }
         }
     }
 }
